@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>net.1000ch.github-emoji</string>
 	<key>connections</key>
 	<dict>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
@@ -32,9 +32,9 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>126</integer>
 				<key>keyword</key>
 				<string>emoji</string>
 				<key>runningsubtext</key>
@@ -44,7 +44,7 @@
 				<key>subtext</key>
 				<string>Emoji for GitHub</string>
 				<key>title</key>
-				<string>Emoji for GitHub</string>
+				<string>emoji {query}</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
