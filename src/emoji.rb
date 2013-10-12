@@ -1,8 +1,7 @@
 module Emoji
   def self.emojis
-    Dir.glob(File.expand_path('./emoji/*.png')).map do |path|
-      md = /\/(.+)\.png/.match(path)
-      (md && md[1]) ? md[1] : nil
+    Dir.glob('./emoji/*.png').map do |path|
+      File.basename(path, ".png")
     end.compact.uniq.sort
   end
 
@@ -17,9 +16,9 @@ module Emoji
     {
       :uid      => '',
       :title    => emoji,
-      :subtitle => "Copy to clipboard: #{emoji}",
+      :subtitle => "Copy to clipboard :#{emoji}:",
       :arg      => emoji,
-      :emoji     => { :type => 'default', :name => "./emoji/#{emoji}.png" },
+      :icon     => { :type => 'default', :name => "./emoji/#{emoji}.png" },
       :valid    => 'yes',
     }
   end

@@ -7,19 +7,17 @@ require 'rubygems' unless defined? Gem # rubygems is only needed in 1.8
 require 'alfred'
 require 'emoji'
 
-def generate_feedback(alfred, query)
-  feedback = alfred.feedback
-  queries  = query.split
-  emojis    = Emoji.emojis
-
-  Emoji.select!(emojis, queries)
-  emojis.each { |emoji| feedback.add_item(Emoji.item_hash(emoji)) }
-
-  puts feedback.to_alfred
-end
-
 Alfred.with_friendly_error do |alfred|
+  fb = alfred.feedback
   alfred.with_rescue_feedback = true
+
   query = ARGV.join(' ').strip
-  generate_feedback(alfred, query)
+  emojis = Emoji.emojis
+
+  Emoji.select!(emojis, query.split)
+  emojis.each do |emoji|
+    fb.add_item(Emoji.item_hash(emoji))
+  end
+
+  puts fb.to_xml
 end
