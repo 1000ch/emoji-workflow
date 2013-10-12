@@ -6,19 +6,19 @@ module Emoji
     end.compact.uniq.sort
   end
 
-  def self.select!(icons, queries)
+  def self.select!(emojis, queries)
     queries.each do |q|
       # use reject! for ruby 1.8 compatible
-      icons.reject! { |i| i.index(q.downcase) ? false : true }
+      emojis.reject! { |i| i.index(q.downcase) ? false : true }
     end
   end
 
   def self.item_hash(emoji)
     {
       :uid      => '',
-      :title    => icon,
+      :title    => emoji,
       :subtitle => "Copy to clipboard: #{emoji}",
-      :arg      => icon,
+      :arg      => emoji,
       :emoji     => { :type => 'default', :name => "./emoji/#{emoji}.png" },
       :valid    => 'yes',
     }
