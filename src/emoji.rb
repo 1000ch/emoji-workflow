@@ -8,7 +8,9 @@ module Emoji
   def self.select!(emojis, queries)
     queries.each do |q|
       # use reject! for ruby 1.8 compatible
-      emojis.reject! { |i| i.index(q.downcase) ? false : true }
+      emojis.reject! do |i|
+        i.index(q.downcase) ? false : true
+      end
     end
   end
 
