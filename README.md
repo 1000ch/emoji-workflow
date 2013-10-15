@@ -4,8 +4,13 @@
 
 Alfred workflow for GitHub Emoji.
 
+## Useage
+
+Comming soon...
+
 ## Reference
 
+- [zhaocai/alfred2-ruby-template](https://github.com/zhaocai/alfred2-ruby-template/)
 - [ruedap/alfred2-font-awesome-workflow](https://github.com/ruedap/alfred2-font-awesome-workflow/)
 
 ## Emojis
