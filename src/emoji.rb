@@ -1,6 +1,6 @@
 module Emoji
   def self.emojis
-    Dir.glob('./emoji/*.png').map do |path|
+    Dir.glob("./emoji/*.png").map do |path|
       File.basename(path, ".png")
     end.compact.uniq.sort
   end
@@ -16,12 +16,12 @@ module Emoji
 
   def self.item_hash(emoji)
     {
-      :uid      => '',
+      :uid      => "",
       :title    => emoji,
       :subtitle => "Copy to clipboard :#{emoji}:",
       :arg      => emoji,
-      :icon     => { :type => 'default', :name => "./emoji/#{emoji}.png" },
-      :valid    => 'yes',
+      :icon     => { :type => "default", :name => "./emoji/#{emoji}.png" },
+      :valid    => "yes",
     }
   end
 end
