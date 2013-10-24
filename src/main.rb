@@ -8,16 +8,11 @@ require 'alfred'
 require 'emoji'
 
 Alfred.with_friendly_error do |alfred|
-  fb = alfred.feedback
+
   alfred.with_rescue_feedback = true
 
   query = ARGV.join(' ').strip
   emojis = Emoji.emojis
 
-  Emoji.select!(emojis, query.split)
-  emojis.each do |emoji|
-    fb.add_item(Emoji.item_hash(emoji))
-  end
-
-  puts fb.to_xml
+  puts Emoji.new(query).to_alfred(alfred)
 end

@@ -1,11 +1,26 @@
 module Emoji
-  def self.emojis
+  attr_render :emojis
+  
+  def initialize(query = '')
+    @emojis = load_emojis
+  end
+  
+  def load_emojis
     Dir.glob("./emoji/*.png").map do |path|
       File.basename(path, ".png")
     end.compact.uniq.sort
   end
+  
+  def add_items(feedback, emojis = @emojis)
+    emojis.each { |emoji| feedback.add_item(item_hash(emoji)) }
+    feedback
+  end
+  
+  def to_alfred(alfred)
+    add_items(alfred.feedback).to_alfred
+  end
 
-  def self.select!(emojis, queries)
+  def select!(queries, emojis = @emojis)
     queries.each do |q|
       # use reject! for ruby 1.8 compatible
       emojis.reject! do |i|
