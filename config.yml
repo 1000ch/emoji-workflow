@@ -1,7 +1,7 @@
 # bundle_id = "domain.id"
 # path is the relative path to the workflow in the project root
 ---
-path: src
+path: workflow
 domain: net.1000ch
 id: github-emoji
 # If you are using Alfred's advanced Dropbox sync, indicate the path shown in
