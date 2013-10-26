@@ -12,7 +12,7 @@ To use Alfred Workflows, it requires [Powerpack](http://www.alfredapp.com/powerp
 
 ### Install
 
-Download [`.alfredworkflow` file](https://github.com/1000ch/github-emoji-workflow/raw/master/GitHub%20Emoji.alfredworkflow) ant import it.
+Download [GitHubEmoji.alfredworkflow](https://github.com/1000ch/github-emoji-workflow/raw/master/GitHubEmoji.alfredworkflow) ant import it.
 
 ### Search with keyword
 
