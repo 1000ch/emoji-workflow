@@ -6,7 +6,19 @@ Alfred workflow for GitHub Emoji.
 
 ## Useage
 
-Comming soon...
+### Premise
+
+To use Alfred Workflows, it requires [Powerpack](http://www.alfredapp.com/powerpack/).
+
+### Install
+
+Download [`.alfredworkflow` file](https://github.com/1000ch/github-emoji-workflow/raw/master/GitHub%20Emoji.alfredworkflow) ant import it.
+
+### Search with keyword
+
+Type keyword after `emoji`!
+
+![](/screenshot/emoji.png)
 
 ## Reference
 
