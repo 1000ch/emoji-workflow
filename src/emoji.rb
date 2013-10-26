@@ -5,6 +5,7 @@ class Emoji
 
   def initialize(query = '')
     @emojis = load_emojis
+    select!(query.split)
   end
   
   def load_emojis
