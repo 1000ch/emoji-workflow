@@ -4,7 +4,7 @@
 
 Alfred workflow for GitHub Emoji.
 
-## Useage
+## Usage
 
 ### Premise
 
