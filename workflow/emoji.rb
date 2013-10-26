@@ -1,5 +1,6 @@
 class Emoji
 
+  # List of emoji
   def emojis
     @emojis
   end
@@ -51,4 +52,5 @@ class Emoji
       :valid    => "yes",
     }
   end
+
 end
