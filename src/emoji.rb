@@ -1,6 +1,8 @@
-module Emoji
-  attr_render :emojis
-  
+class Emoji
+  def emojis
+    @emojis
+  end
+
   def initialize(query = '')
     @emojis = load_emojis
   end
@@ -29,7 +31,7 @@ module Emoji
     end
   end
 
-  def self.item_hash(emoji)
+  def item_hash(emoji)
     {
       :uid      => "",
       :title    => emoji,
