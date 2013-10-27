@@ -1,13 +1,19 @@
 class Emoji
 
-  # List of emoji
+  # Emoji list of emoji
   def emojis
     @emojis
+  end
+
+  # Items formatted for Alfred
+  def alfred_items
+    @alfred_items
   end
 
   # Emoji constructor
   def initialize(query = '')
     @emojis = load_emojis
+    @alfred_items = []
     select!(query.split)
   end
   
@@ -27,18 +33,13 @@ class Emoji
       end
     end
   end
-    
-  # Return results to Alfred
-  def to_alfred(alfred)
-    add_items(alfred.feedback).to_alfred
-  end
-
-  # Add formatted data from emojis
-  def add_items(feedback, emojis = @emojis)
+  
+  # Get Alfred items
+  def get_items(alfred_items = @alfred_items, emojis = @emojis)
     emojis.each do |emoji|
-      feedback.add_item(item_hash(emoji))
+      alfred_items.push(item_hash(emoji))
     end
-    feedback
+    alfred_items   
   end
 
   # Alfred item format

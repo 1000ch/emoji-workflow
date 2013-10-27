@@ -13,6 +13,13 @@ Alfred.with_friendly_error do |alfred|
   alfred.with_rescue_feedback = true
 
   query = ARGV.join(' ').strip
+  
+  # get emojis with query
+  Emoji.new(query).get_items.each do |item|
+    alfred.feedback.add_item(item)
+  end
+  
+  # put results
+  puts alfred.feedback.to_alfred
 
-  puts Emoji.new(query).to_alfred(alfred)
 end
