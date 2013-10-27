@@ -1,6 +1,6 @@
 class Emoji
 
-  # Emoji list of emoji
+  # Emojis
   def emojis
     @emojis
   end
@@ -24,12 +24,11 @@ class Emoji
     end.compact.uniq.sort
   end
   
-  # Filter with arguments
+  # Filter with query
   def select!(queries, emojis = @emojis)
-    queries.each do |q|
-      # use reject! for ruby 1.8 compatible
-      emojis.reject! do |i|
-        i.index(q.downcase) ? false : true
+    queries.each do |query|
+      emojis.reject! do |emoji|
+        emoji.index(query.downcase) ? false : true
       end
     end
   end
@@ -37,13 +36,13 @@ class Emoji
   # Get Alfred items
   def get_items(alfred_items = @alfred_items, emojis = @emojis)
     emojis.each do |emoji|
-      alfred_items.push(item_hash(emoji))
+      alfred_items.push(format_item(emoji))
     end
     alfred_items   
   end
 
-  # Alfred item format
-  def item_hash(emoji)
+  # Format for Alfred
+  def format_item(emoji)
     {
       :uid      => "",
       :title    => emoji,
