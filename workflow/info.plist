@@ -21,7 +21,7 @@
 	<key>createdby</key>
 	<string>1000ch</string>
 	<key>description</key>
-	<string>Select and Copy to clipboard GitHub Emoji</string>
+	<string>Search GitHub Emoji and copy to clipboard</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
