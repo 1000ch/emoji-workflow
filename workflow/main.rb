@@ -12,6 +12,7 @@ Alfred.with_friendly_error do |alfred|
 
   alfred.with_rescue_feedback = true
 
+  # get arguments
   query = ARGV.join(' ').strip
   
   # get emojis with query
