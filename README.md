@@ -1,8 +1,30 @@
-# github-emoji-workflow
+# emoji-workflow
 
 ## About
 
-Alfred workflow for GitHub Emoji.
+Alfred workflow for Emoji.
+Emoji is available on following service.
+
+- [Basecamp](https://basecamp.com/)
+- [Campfire](https://campfirenow.com/)
+- [Flowdeck](https://www.flowdock.com/)
+- [GitHub](https://github.com/)
+- [GitLab](http://gitlab.org/)
+- [Hall](https://hall.com/)
+- [JabbR](http://about.jabbr.net/)
+- [KandanApp](http://kandanapp.com/)
+- [Kippt](https://kippt.com/)
+- [plug.dj](http://plug.dj/)
+- [Piki](http://piki.fm/)
+- [Qiita](http://qiita.com/)
+- [Ruby China](http://ruby-china.org/)
+- [Sprintly](https://sprint.ly/)
+- [Teambox](http://teambox.com/)
+- [Textbox.io](https://textbox.io/)
+- [Trac](http://trac-hacks.org/wiki/TracEmojiPlugin)
+- [Trello](https://trello.com/)
+- [Turntable](http://turntable.fm/)
+- [Zendesk.com](http://www.zendesk.com/)
 
 ## Usage
 
@@ -12,7 +34,7 @@ To use Alfred Workflows, it requires [Powerpack](http://www.alfredapp.com/powerp
 
 ### Install
 
-Download [GitHubEmoji.alfredworkflow](https://github.com/1000ch/github-emoji-workflow/raw/master/GitHubEmoji.alfredworkflow) ant import it.
+Download [Emoji.alfredworkflow](https://github.com/1000ch/emoji-workflow/raw/master/Emoji.alfredworkflow) ant import it.
 
 ### Search with keyword
 

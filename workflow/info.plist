@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>net.1000ch.github-emoji</string>
+	<string>net.1000ch.emoji</string>
 	<key>connections</key>
 	<dict>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
@@ -21,11 +21,11 @@
 	<key>createdby</key>
 	<string>1000ch</string>
 	<key>description</key>
-	<string>Search GitHub Emoji and copy to clipboard</string>
+	<string>Search Emoji and copy to clipboard</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>GitHub Emoji</string>
+	<string>Emoji</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -42,7 +42,7 @@
 				<key>script</key>
 				<string>/usr/bin/ruby ./main.rb {query}</string>
 				<key>subtext</key>
-				<string>Emoji for GitHub</string>
+				<string>Emoji for GitHub, Kippt, Trello, Qiita, and other...</string>
 				<key>title</key>
 				<string>emoji {query}</string>
 				<key>type</key>

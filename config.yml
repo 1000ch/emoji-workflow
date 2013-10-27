@@ -3,7 +3,7 @@
 ---
 path: workflow
 domain: net.1000ch
-id: github-emoji
+id: emoji
 # If you are using Alfred's advanced Dropbox sync, indicate the path shown in
 # Alfred Preferences > Advanced > Syncing:
 dropbox: ~/Dropbox/Alfred
