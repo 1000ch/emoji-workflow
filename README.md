@@ -56,4 +56,4 @@ Type keyword after `emoji`!
 ## License
 
 Copyright [@1000ch](http://twitter.com/1000ch)  
-Lisenced under the GPL Lisence version 3.  
+Licensed under the GPL License version 3.  
