@@ -34,7 +34,7 @@ To use Alfred Workflows, it requires [Powerpack](http://www.alfredapp.com/powerp
 
 ### Install
 
-Download [Emoji.alfredworkflow](https://github.com/1000ch/emoji-workflow/raw/master/Emoji.alfredworkflow) ant import it.
+Download [Emoji.alfredworkflow](https://github.com/1000ch/emoji-workflow/raw/master/Emoji.alfredworkflow) and import it.
 
 ### Search with keyword
 
