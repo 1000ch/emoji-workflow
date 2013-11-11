@@ -40,7 +40,7 @@ Download [emoji.alfredworkflow](https://github.com/1000ch/emoji-workflow/blob/ma
 
 Type keyword after `emoji`!
 
-![](/screenshot/emoji.png)
+![](https://raw.github.com/1000ch/emoji-workflow/master/screenshot/emoji.png)
 
 ## Reference
 
